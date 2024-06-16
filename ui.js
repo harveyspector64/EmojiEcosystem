@@ -2,8 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const emojiPanel = document.getElementById('emoji-panel');
     const playArea = document.getElementById('play-area');
 
-    // Initialize emoji panel with emojis from constants
-    Object.keys(EMOJI_DATA).forEach(type => {
+    // Only add initial emojis to the panel
+    const initialEmojis = ['flowering-bush', 'tree'];
+
+    initialEmojis.forEach(type => {
         const element = createEmojiElement(type);
         if (element) {
             element.id = type;
