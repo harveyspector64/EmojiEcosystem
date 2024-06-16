@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const playArea = document.getElementById('play-area');
 
-    // Listen for entity dropped events
     playArea.addEventListener('entityDropped', (e) => {
         const { id, x, y } = e.detail;
+        console.log(`Entity dropped: ${id} at (${x}, ${y})`);
         initializeEntity(id, x, y);
     });
 
@@ -13,9 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             entity = new FloweringBush(x, y);
         } else if (id === 'tree') {
             entity = new Tree(x, y);
+        } else {
+            console.error(`Unknown entity type: ${id}`);
+            return;
         }
-        if (entity) {
-            entity.addToPlayArea();
-        }
+        entity.addToPlayArea();
     }
 });
