@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         clone.style.position = 'absolute';
         clone.style.left = `${e.clientX - playArea.offsetLeft}px`;
         clone.style.top = `${e.clientY - playArea.offsetTop}px`;
+        clone.removeAttribute('id'); // Remove id to avoid duplicates
 
         playArea.appendChild(clone);
 
