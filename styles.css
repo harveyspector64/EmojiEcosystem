@@ -19,13 +19,13 @@ body {
     overflow: hidden;
 }
 
-#emoji-panel img {
-    width: 50px;
+.emoji {
+    font-size: 2em; /* Adjust size as needed */
     margin: 10px;
     cursor: grab;
 }
 
-#play-area img {
+#play-area .emoji {
     position: absolute;
     width: auto;
 }
