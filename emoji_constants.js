@@ -1,15 +1,14 @@
 const EMOJI_SIZES = {
-    'flowering-bush': { width: '40px', height: '40px' },
-    'tree': { width: '80px', height: '80px' },
-    'butterfly': { width: '20px', height: '20px' },
-    'bird': { width: '30px', height: '30px' },
-    'worm': { width: '15px', height: '15px' }
+    'flowering-bush': { width: '2em', height: '2em' },
+    'tree': { width: '3em', height: '3em' },
+    'butterfly': { width: '1.5em', height: '1.5em' },
+    'bird': { width: '2em', height: '2em' },
+    'worm': { width: '1em', height: '1em' }
 };
 
 function setEmojiSize(element, type) {
     const size = EMOJI_SIZES[type];
     if (size) {
-        element.style.width = size.width;
-        element.style.height = size.height;
+        element.style.fontSize = size.width; // Assuming width and height are the same for font-size
     }
 }
