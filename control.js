@@ -8,10 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function initializeEntity(id, x, y) {
+        let entity;
         if (id === 'flowering-bush') {
-            // Initialize flowering bush logic
+            entity = new FloweringBush(x, y);
         } else if (id === 'tree') {
-            // Initialize tree logic
+            entity = new Tree(x, y);
+        }
+        if (entity) {
+            entity.addToPlayArea();
         }
     }
 });
