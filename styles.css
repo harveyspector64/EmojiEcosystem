@@ -1,0 +1,32 @@
+/* styles.css */
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+#emoji-panel {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#play-area {
+    width: 80%;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+#emoji-panel img {
+    width: 50px;
+    margin: 10px;
+    cursor: grab;
+}
+
+#play-area img {
+    position: absolute;
+    width: auto;
+}
