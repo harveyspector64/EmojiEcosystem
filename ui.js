@@ -1,4 +1,3 @@
-// ui.js
 document.addEventListener('DOMContentLoaded', () => {
     const emojiPanel = document.getElementById('emoji-panel');
     const playArea = document.getElementById('play-area');
