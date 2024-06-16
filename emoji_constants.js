@@ -1,4 +1,3 @@
-// emoji_constants.js
 const EMOJI_SIZES = {
     'flowering-bush': { width: '40px', height: '40px' },
     'tree': { width: '80px', height: '80px' },
